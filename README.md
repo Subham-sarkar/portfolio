@@ -27,7 +27,7 @@ cd portfolio
 Install dependencies:
 
 ```
-npm install
+npm install --legacy-peer-deps
 ```
 
 ### Running the website
@@ -38,7 +38,7 @@ Run the development server:
 npm start
 ```
 
-Open the website in your browser at http://localhost:3000
+Open the website in your browser at http://localhost:5173
 
 ### Built With
 
