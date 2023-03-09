@@ -1,5 +1,4 @@
 {
-  "homepage": "https://Subham-sarkar.github.io/portfolio",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
@@ -9,8 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "start": "npm run dev",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "install": "npm install --legacy-peer-deps"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
