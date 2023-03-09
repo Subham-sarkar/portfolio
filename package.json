@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "start": "npm run dev",
     "predeploy": "npm run build",
-    "deploy": "gf-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
