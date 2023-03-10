@@ -85,7 +85,7 @@ const Blogs = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Ready to dive into the exciting world of tech with me? Welcome to my tech blog, where I indulge in my favorite pastime: unraveling the mysteries of technology! As tech enthusiasts, me and my friend started this blog to constantly learn new things and discover exciting innovations. And what better way to share our love for all things tech than by writing about them? Step right up and get a load of these tech-tastic articles we've cooked up for you! 🚀
+          "Welcome to our tech blog, where we geek out over the latest tech trends and discoveries! We started this blog to feed our insatiable curiosity and share our tech obsessions with you. Get ready to blast off with our out-of-this-world articles!" 🚀
         </motion.p>
       </div>
 

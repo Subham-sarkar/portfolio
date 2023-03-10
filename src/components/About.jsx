@@ -39,15 +39,15 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={styles.sectionSubText}>Welcome to my digital lair</p>
+        <h2 className={styles.sectionHeadText}>Hello <span className='text-[#915EFF]'>World.</span></h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        As a skilled software developer with expertise in AWS, Python, TypeScript, and JavaScript. My strengths lie in creating efficient and scalable solutions using cloud technologies and frameworks such as React, Node.js, and Three.js. With a client-focused approach, I collaborate closely to solve real-world problems and bring your ideas to life. As a cloud enthusiast, I'm also working towards becoming a solutions architect. Let's work together to build innovative and effective solutions!
+        "Clouds are my playground - I specialize in AWS, Python, and frameworks like React and Three.js. Let's bring your ideas to life with efficient and scalable solutions. Plus, I'm working towards becoming a solutions architect - let's innovate together!"✨
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
