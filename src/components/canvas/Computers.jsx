@@ -52,6 +52,11 @@ const ComputersCanvas = () => {
     };
   }, []);
 
+  // Render the component only on screens except mobile screens
+  if (isMobile) {
+    return null;
+  }
+
   return (
     <Canvas
       frameloop='demand'
@@ -67,7 +72,8 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={isMobile} />
+        {/* <Computers isMobile={isMobile} /> */}
+        <Computers />
       </Suspense>
       <Preload all />
     </Canvas>
