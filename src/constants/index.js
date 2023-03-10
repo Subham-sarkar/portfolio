@@ -120,19 +120,19 @@ const technologies = [
 ];
 
 const experiences = [
-  {
-    title: "Senior Software Engineer",
-    company_name: "AWS",
-    icon: aws,
-    iconBg: "#232F3E",
-    date: "2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  // {
+  //   title: "Senior Software Engineer",
+  //   company_name: "AWS",
+  //   icon: aws,
+  //   iconBg: "#232F3E",
+  //   date: "2023 - Present",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
   {
     title: "DevOps Engineer",
     company_name: "DataGrokr",
@@ -190,28 +190,49 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "AWS 3-Tier Architecture",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
       {
-        name: "react",
+        name: "cloudformation",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "nginx",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "servlet",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: awsarch,
+    source_code_link: "https://github.com/Subham-sarkar/AWS-Three-Tier-Architecture",
   },
   {
-    name: "Job IT",
+    name: "Event Driven Architecture",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "aws",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "lambda",
+        color: "green-text-gradient",
+      },
+      {
+        name: "eventbridge",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tacobell,
+    source_code_link: "https://github.com/Subham-sarkar/event-driven-architecture",
+  },
+  {
+    name: "My Portfolio",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
@@ -220,19 +241,53 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "threejs",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: dockerblog,
+    source_code_link: "https://github.com/Subham-sarkar/portfolio",
   },
   {
-    name: "Trip Guide",
+    name: "Path Finder",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "html",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/Subham-sarkar/React-Path-Finder-using-Dijkstra-s-Shortest-Path-Algorithm",
+  },
+  {
+    name: "GoQUIZ",
+    description:
+      "Developed an online exam application using the .NET framework that allows users to take online tests with feature of automatic generation ofresults in an excel sheet.",
+    tags: [
+      {
+        name: "C#",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/Subham-sarkar/GoQUIZ",
+  },
+  {
+    name: "Music Notes Generator",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [

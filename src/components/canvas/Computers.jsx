@@ -8,21 +8,21 @@ const Computers = ({isMobile}) => {
   const computer = useGLTF("./macbook_pro/scene.gltf");
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor='cyan' />
+      <hemisphereLight intensity={0.18} groundColor='cyan' />
       <spotLight
-        position={[-20, 50, 10]}
+        position={[-10, 80, 10]}
         angle={0.12}
         penumbra={1}
         intensity={1}
         castShadow
         shadow-mapSize={1024}
       />
-      <pointLight intensity={1} />
+      {/* <pointLight intensity={1} /> */}
       <primitive
         object={computer.scene}
-        scale={isMobile ? 5 : 6.5}
-        position={isMobile ? [-0, -2.23, 1] : [0, -2.7, -1.5]}
-        // rotation={[0, 0, 0]}
+        scale={isMobile ? 3.9 : 5.3}
+        position={isMobile ? [-0, -1.9, 0] : [4.8, -2.2, -1.5]}
+        rotation={[0, Math.PI / 4, 0]}
       />
     </mesh>
   );

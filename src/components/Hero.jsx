@@ -1,8 +1,17 @@
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
+import { FaDownload } from 'react-icons/fa';
 
 const Hero = () => {
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.download = "subham_sarkar_resume.pdf";
+    link.href = "/subham_sarkar_resume.pdf";
+    link.click();
+  }
+
   return (
     <section className={`relative w-full h-screen mx-auto`} style={{ marginBottom: "5rem" }}>
       <div
@@ -22,6 +31,13 @@ const Hero = () => {
           Scaling to new heights as a <br className='sm:block hidden' />
           Software Engineer and AWS enthusiast.
           </p>
+          <button
+            className={`${styles.heroButton} w-[150px]  border-white text-white hover:bg-white hover:text-secondary mt-4 flex items-center justify-center`}
+            onClick={handleDownload}
+          >
+            <FaDownload className="mr-2" />
+            Resume
+          </button>
         </div>
       </div>
 

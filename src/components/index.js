@@ -8,6 +8,7 @@ import Works from './Works';
 import Blogs from './Blogs';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
+import Footer from './Footer';
 
 export {
   Hero,
@@ -22,5 +23,6 @@ export {
   EarthCanvas, 
   BallCanvas, 
   ComputersCanvas, 
-  StarsCanvas
+  StarsCanvas,
+  Footer
 }
