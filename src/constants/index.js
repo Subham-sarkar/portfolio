@@ -70,28 +70,8 @@ const services = [
 
 const technologies = [
   {
-    name: "Kubernetes",
-    icon: k8,
-  },
-  {
-    name: "Python",
-    icon: python,
-  },
-  {
-    name: "Cloud Formation",
-    icon: cft,
-  },
-  {
-    name: "Jenkins",
-    icon: jenkins,
-  },
-  {
     name: "JavaScript",
     icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
   },
   {
     name: "React JS",
@@ -117,6 +97,22 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
+  {
+    name: "Kubernetes",
+    icon: k8,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "Cloud Formation",
+    icon: cft,
+  },
+  {
+    name: "Jenkins",
+    icon: jenkins,
+  }
 ];
 
 const experiences = [
