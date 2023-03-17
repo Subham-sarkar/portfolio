@@ -27,33 +27,68 @@ const Contact = () => {
     });
   };
 
+  function validateEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
 
+    const email = form.email.trim();
+    if (!validateEmail(email)) {
+      alert("Please enter a valid email address");
+      return;
+    }
+
+    setLoading(true);
+  
     emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "Subham Sarkar",
+          to_name: import.meta.env.VITE_APP_OWNER_NAME,
           from_email: form.email,
-          to_email: "subhamsarkar6798@gmail.com",
+          to_email: import.meta.env.VITE_APP_OWNER_EMAIL,
           message: form.message,
+          reply_to: form.email,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
+          // Send a confirmation email to the user
+          emailjs
+            .send(
+              import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+              import.meta.env.VITE_APP_EMAILJS_CONFIRMATION_TEMPLATE_ID,
+              {
+                to_name: form.name,
+                to_email: form.email,
+                message: "Thank you for contacting me! I will get back to you as soon as possible.",
+              },
+              import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+            )
+            .then(
+              () => {
+                setLoading(false);
+                alert("Thank you. I will get back to you as soon as possible.");
+  
+                setForm({
+                  name: "",
+                  email: "",
+                  message: "",
+                });
+              },
+              (error) => {
+                setLoading(false);
+                console.error(error);
+  
+                alert("Ahh, something went wrong. Please try again.");
+              }
+            );
         },
         (error) => {
           setLoading(false);
@@ -63,6 +98,7 @@ const Contact = () => {
         }
       );
   };
+  
 
   return (
     <div
