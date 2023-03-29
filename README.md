@@ -27,7 +27,7 @@ cd portfolio
 Install dependencies:
 
 ```
-npm install --legacy-peer-deps
+npm install
 ```
 
 ### Running the website
