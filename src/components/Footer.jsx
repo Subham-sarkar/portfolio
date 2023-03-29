@@ -18,16 +18,21 @@ const Footer = () => {
       }}
     >
       <a href="https://github.com/Subham-sarkar" className="mx-3" target="_blank">
-        <AiOutlineGithub style={{ color: "#fff", fontSize: "1.5rem" }} />
+        <AiOutlineGithub style={{ color: "#fff", fontSize: "1.5rem", transition: "font-size 0.2s ease-in-out" }} 
+        onMouseOver={(e) => {e.currentTarget.style.fontSize = "2rem"}}
+        onMouseOut={(e) => {e.currentTarget.style.fontSize = "1.5rem"}}/>
       </a>
       <a href="https://www.linkedin.com/in/subhamsarkar6798/" className="mx-3" target="_blank">
-        <AiOutlineLinkedin style={{ color: "#fff", fontSize: "1.5rem" }} />
+        <AiOutlineLinkedin style={{ color: "#fff", fontSize: "1.5rem", transition: "font-size 0.2s ease-in-out" }} onMouseOver={(e) => {e.currentTarget.style.fontSize = "2rem"}}
+        onMouseOut={(e) => {e.currentTarget.style.fontSize = "1.5rem"}}/>
       </a>
       <a href="mailto:subhamsarkar6798@gmail.com" className="mx-3" target="_blank" title="subhamsarkar6798@gmail.com">
-        <HiOutlineMail style={{ color: "#fff", fontSize: "1.5rem" }} />
+        <HiOutlineMail style={{ color: "#fff", fontSize: "1.5rem", transition: "font-size 0.2s ease-in-out" }} onMouseOver={(e) => {e.currentTarget.style.fontSize = "2rem"}}
+        onMouseOut={(e) => {e.currentTarget.style.fontSize = "1.5rem"}}/>
       </a>
       <a href="https://tldrthis.hashnode.dev/" className="mx-3" target="_blank">
-        <SiHashnode style={{ color: "#fff", fontSize: "1.5rem" }} />
+        <SiHashnode style={{ color: "#fff", fontSize: "1.5rem", transition: "font-size 0.2s ease-in-out" }} onMouseOver={(e) => {e.currentTarget.style.fontSize = "2rem"}}
+        onMouseOut={(e) => {e.currentTarget.style.fontSize = "1.5rem"}}/>
       </a>
     </footer>
   );

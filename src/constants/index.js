@@ -24,8 +24,6 @@ import {
   rest,
   tacobell,
   webpack,
-  carrent,
-  jobit,
   tripguide,
   threejs,
 } from "../assets";
@@ -70,8 +68,20 @@ const services = [
 
 const technologies = [
   {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "AWS",
+    icon: aws,
+  },
+  {
     name: "JavaScript",
     icon: javascript,
+  },
+  {
+    name: "Cloud Formation",
+    icon: cft,
   },
   {
     name: "React JS",
@@ -102,33 +112,12 @@ const technologies = [
     icon: k8,
   },
   {
-    name: "Python",
-    icon: python,
-  },
-  {
-    name: "Cloud Formation",
-    icon: cft,
-  },
-  {
     name: "Jenkins",
     icon: jenkins,
   }
 ];
 
 const experiences = [
-  // {
-  //   title: "Senior Software Engineer",
-  //   company_name: "AWS",
-  //   icon: aws,
-  //   iconBg: "#232F3E",
-  //   date: "2023 - Present",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
   {
     title: "DevOps Engineer",
     company_name: "DataGrokr",
